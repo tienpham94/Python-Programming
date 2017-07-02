@@ -34,7 +34,8 @@ def my_function(name,age):
         special = "sunny"
     else :
         special = "great"
-
+	
+	#joining the return string
     my_string = "".join([my_tuple[0],str(name), my_tuple[1],str(age),my_tuple[2], str(favorite_colour), my_tuple[3],str(this_date), my_tuple[4],special, my_tuple[5], str(lucky_number), "."])
     return my_string
 
