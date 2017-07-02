@@ -18,7 +18,7 @@ def my_weather(day,api):
     json_obj = str(response,"utf-8")
     data = json.loads(json_obj)
 
-    #tuple to store sentence strings
+    #tuple to store string sentences
     info =("I was born at ", " in ", "The weather at that time was ","The temperature was "," °C")
     
     print("".join([info[0],data["history"]["observations"][5]["date"]["pretty"],info[1],data["history"]["date"]["tzname"]]))
